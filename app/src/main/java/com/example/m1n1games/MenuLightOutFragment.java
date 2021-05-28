@@ -44,9 +44,7 @@ public class MenuLightOutFragment extends Fragment {
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        dialog.setContentView(R.layout.comofunciona);
-                        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                        dialog.show();
+                        navController.navigate(R.id.action_menuLightOutFragment_to_comojugarfragment);
                     }
                 });
         PushDownAnim.setPushDownAnimTo(binding.button2).setScale(PushDownAnim.MODE_SCALE,0.89f)

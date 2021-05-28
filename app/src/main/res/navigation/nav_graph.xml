@@ -81,6 +81,9 @@
         <action
             android:id="@+id/action_menuLightOutFragment_to_ranking"
             app:destination="@id/ranking" />
+        <action
+            android:id="@+id/action_menuLightOutFragment_to_comojugarfragment"
+            app:destination="@id/comojugarfragment" />
     </fragment>
     <fragment
         android:id="@+id/problemastecniosFragment"
@@ -90,5 +93,14 @@
         <action
             android:id="@+id/action_problemastecniosFragment_to_menu"
             app:destination="@id/menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/comojugarfragment"
+        android:name="com.example.m1n1games.Comojugarfragment"
+        android:label="fragment_comojugarfragment"
+        tools:layout="@layout/fragment_comojugarfragment" >
+        <action
+            android:id="@+id/action_comojugarfragment_to_menuLightOutFragment"
+            app:destination="@id/menuLightOutFragment" />
     </fragment>
 </navigation>
